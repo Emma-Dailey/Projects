@@ -34,6 +34,15 @@ public class Zookeeper {
         
                 """;
         System.out.println(camel);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the number of the habitat you would like to view:\n" +
+                "1 - Camel\n" +
+                "2 - Hippo\n" +
+                "3 - Koala\n" +
+                "4 - Spider\n" +
+                "\n" +
+                "> ");
+        int habitatNumber = scanner.nextInt();
 
         File file = new File("Zookeeper/animals/hippo.txt");
         try{
